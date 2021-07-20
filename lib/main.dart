@@ -1,4 +1,4 @@
-import 'package:flashorant/screens/home_page.dart';
+import 'package:flashorant/screens/splash_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: MyHomePage(title: 'Flashorant Survey'),
+      home: SplashFlash(title: 'Flashorant Survey'),
     );
   }
 }
