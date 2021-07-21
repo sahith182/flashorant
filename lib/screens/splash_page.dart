@@ -33,7 +33,7 @@ class _SplashFlashState extends State<SplashFlash> {
           child: Text(
             "Flashorant",
             style: TextStyle(
-                fontSize: 40, fontFamily: "Valorant", color: Colors.red),
+                fontSize: 40, fontFamily: "Valorant", color: Color(0xffFF4654)),
           ),
         ),
       ),
