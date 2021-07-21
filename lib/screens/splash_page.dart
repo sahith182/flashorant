@@ -27,9 +27,10 @@ class _SplashFlashState extends State<SplashFlash> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xff0F1923),
       body: Container(
         child:
-            Center(child: Text("SplashScreen", style: TextStyle(fontSize: 40))),
+            Center(child: Text("Flashorant", style: TextStyle(fontSize: 40))),
       ),
     );
   }
