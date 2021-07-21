@@ -14,7 +14,7 @@ class _SplashFlashState extends State<SplashFlash> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 10), () {
+    Timer(Duration(seconds: 2), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
