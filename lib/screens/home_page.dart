@@ -95,7 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             Text(
                 "Please select your favourite map, agent and gun to complete the survey."),
-            FavDrop<String>(
+            FavDrop(
               value: chosenMap,
               tittle: "Favourite Map",
               list: mapList,
@@ -106,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 });
               },
             ),
-            FavDrop<String>(
+            FavDrop(
               value: chosenAgent,
               tittle: "Favourite Agent",
               list: agentList,
@@ -117,7 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 });
               },
             ),
-            FavDrop<String>(
+            FavDrop(
               value: chosenGun,
               tittle: "Favourite Gun",
               list: gunList,

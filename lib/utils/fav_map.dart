@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class FavDrop<T> extends StatefulWidget {
+class FavDrop extends StatefulWidget {
   const FavDrop({
     Key? key,
     required this.onChanged,
