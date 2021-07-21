@@ -64,5 +64,8 @@ flutter:
      - family: Valorant
        fonts:
          - asset: fonts/Valorant_Font.ttf
+     - family: Din Next W1G
+       fonts:
+         - asset: fonts/Din_Next_W1G.otf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
