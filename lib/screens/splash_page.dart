@@ -29,7 +29,7 @@ class _SplashFlashState extends State<SplashFlash> {
     return Scaffold(
       body: Container(
         child:
-            Center(child: Text("SlashScreen", style: TextStyle(fontSize: 40))),
+            Center(child: Text("SplashScreen", style: TextStyle(fontSize: 40))),
       ),
     );
   }
