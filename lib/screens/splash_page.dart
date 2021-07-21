@@ -14,7 +14,7 @@ class _SplashFlashState extends State<SplashFlash> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 5), () {
+    Timer(Duration(seconds: 10), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
@@ -29,8 +29,13 @@ class _SplashFlashState extends State<SplashFlash> {
     return Scaffold(
       backgroundColor: Color(0xff0F1923),
       body: Container(
-        child:
-            Center(child: Text("Flashorant", style: TextStyle(fontSize: 40))),
+        child: Center(
+          child: Text(
+            "Flashorant",
+            style: TextStyle(
+                fontSize: 40, fontFamily: "Valorant", color: Colors.red),
+          ),
+        ),
       ),
     );
   }
