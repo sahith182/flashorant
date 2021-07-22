@@ -30,7 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
     'Guardian',
     'Phantom',
     'Vandal',
-    'Marshall',
+    'Marshal',
     'Operator',
     'Ares',
     'Odin'
@@ -140,7 +140,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             ElevatedButton(
               onPressed: surveyResults,
-              child: Text("Finish"),
+              child: Text("Submit"),
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(Color(0xffdc3d4b)),
               ),
