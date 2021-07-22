@@ -1,3 +1,4 @@
+import 'package:flashorant/utils/alert.dart';
 import 'package:flashorant/screens/info_page.dart';
 import 'package:flashorant/screens/result_page.dart';
 import 'package:flashorant/utils/fav_map.dart';
@@ -61,10 +62,19 @@ class _MyHomePageState extends State<MyHomePage> {
     'Split',
   ];
   surveyResults() {
-    print("$chosenMap $chosenAgent,$chosenGun");
+    if (chosenAgent == null || chosenGun == null || chosenMap == null) {
+      showAlertDialog(context);
+      return;
+    }
+
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => ResultScreen()),
+      MaterialPageRoute(
+          builder: (context) => ResultScreen(
+                agent: chosenAgent,
+                gun: chosenGun,
+                map: chosenMap,
+              )),
     );
   }
 
@@ -97,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 "Please select your favourite map, agent and gun to complete the survey."),
             FavDrop(
               value: chosenMap,
-              tittle: "Favourite Map",
+              title: "Favourite Map",
               list: mapList,
               selectionString: "Select a map",
               onChanged: (newValue) {
@@ -108,7 +118,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             FavDrop(
               value: chosenAgent,
-              tittle: "Favourite Agent",
+              title: "Favourite Agent",
               list: agentList,
               selectionString: "Select an agent",
               onChanged: (newValue) {
@@ -119,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             FavDrop(
               value: chosenGun,
-              tittle: "Favourite Gun",
+              title: "Favourite Gun",
               list: gunList,
               selectionString: "Select a gun",
               onChanged: (newValue) {

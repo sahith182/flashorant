@@ -5,12 +5,12 @@ class FavDrop extends StatefulWidget {
     Key? key,
     required this.onChanged,
     required this.value,
-    required this.tittle,
+    required this.title,
     required this.list,
     required this.selectionString,
   }) : super(key: key);
 
-  final String tittle;
+  final String title;
   final String selectionString;
   final List<String> list;
   final ValueChanged<String?>? onChanged;
@@ -25,7 +25,7 @@ class _FavDropState extends State<FavDrop> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text(widget.tittle, style: TextStyle(fontSize: 18)),
+        Text(widget.title, style: TextStyle(fontSize: 18)),
         DropdownButton<String>(
           icon: Icon(Icons.arrow_downward_sharp, color: Color(0xffdc3d4b)),
           dropdownColor: Color(0xff292315),
