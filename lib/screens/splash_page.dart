@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flashorant/screens/home_page.dart';
 import 'package:flashorant/utils/valorant_text.dart';
 import 'package:flutter/material.dart';
@@ -12,10 +13,11 @@ class SplashFlash extends StatefulWidget {
 }
 
 class _SplashFlashState extends State<SplashFlash> {
+  AudioCache audioCache = AudioCache(prefix: "assets/sounds/");
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 5), () {
+    Timer(Duration(seconds: 9), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
@@ -23,6 +25,8 @@ class _SplashFlashState extends State<SplashFlash> {
         ),
       );
     });
+    audioCache.load("loading.mp3");
+    audioCache.play("loading.mp3");
   }
 
   @override
@@ -35,5 +39,11 @@ class _SplashFlashState extends State<SplashFlash> {
         ),
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    audioCache.clearAll();
+    super.dispose();
   }
 }

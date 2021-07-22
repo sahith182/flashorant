@@ -24,6 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   animated_text_kit: ^4.2.1
+  audioplayers: ^0.19.1
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
@@ -41,9 +42,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/sounds/loading.mp3
+    - assets/images/allAgents.gif
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see
@@ -56,9 +57,9 @@ flutter:
   fonts:
     - family: Valorant
       fonts:
-        - asset: fonts/Valorant_Font.ttf
+        - asset: assets/fonts/Valorant_Font.ttf
     - family: Din Next W1G
       fonts:
-        - asset: fonts/Din_Next_W1G.otf
+        - asset: assets/fonts/Din_Next_W1G.otf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
