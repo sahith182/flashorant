@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flashorant/screens/home_page.dart';
+import 'package:flashorant/utils/valorant_text.dart';
 import 'package:flutter/material.dart';
 
 class SplashFlash extends StatefulWidget {
@@ -14,7 +15,7 @@ class _SplashFlashState extends State<SplashFlash> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 2), () {
+    Timer(Duration(seconds: 5), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
@@ -30,11 +31,7 @@ class _SplashFlashState extends State<SplashFlash> {
       backgroundColor: Color(0xff0F1923),
       body: Container(
         child: Center(
-          child: Text(
-            "Flashorant",
-            style: TextStyle(
-                fontSize: 40, fontFamily: "Valorant", color: Color(0xffFF4654)),
-          ),
+          child: AnimatedValoText(text: 'Flashorant'),
         ),
       ),
     );
