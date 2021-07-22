@@ -18,8 +18,12 @@ class _AnimatedValoTextState extends State<AnimatedValoText> {
         TyperAnimatedText(
           widget.text,
           textStyle: valoTextStyle,
-          speed: const Duration(milliseconds: 300),
+          speed: const Duration(milliseconds: 600),
           curve: Curves.bounceInOut,
+        ),
+        RotateAnimatedText(
+          "Triple baby",
+          textStyle: valoTextStyle,
         )
       ],
       isRepeatingAnimation: false,

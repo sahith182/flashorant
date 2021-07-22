@@ -138,6 +138,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 });
               },
             ),
+            Image.asset(
+              "assets/images/allAgents.gif",
+              height: 125.0,
+              width: 125.0,
+            ),
             ElevatedButton(
               onPressed: surveyResults,
               child: Text("Submit"),
