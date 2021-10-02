@@ -20,8 +20,22 @@ class _ResultScreenState extends State<ResultScreen> {
         title: Text("Result Page"),
       ),
       body: Center(
-        child: Text(
-            "Thank you for submitting your responses.\nSubmitted Responses : \nMap: ${widget.map + checkBreeze()} \nAgent: ${checkYoru() + widget.agent} \nGun: ${widget.gun + checkGun()}"),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                  "Thank you for submitting your responses.\nSubmitted Responses : \nMap: ${widget.map + checkBreeze()} \nAgent: ${checkYoru() + widget.agent} \nGun: ${widget.gun + checkGun()}"),
+            ),
+            Image.asset(
+              "assets/images/allAgents.gif",
+              height: 125.0,
+              width: 125.0,
+            ),
+          ],
+        ),
       ),
     );
   }
