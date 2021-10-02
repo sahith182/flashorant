@@ -89,6 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0xffA50002),
         title: Text(widget.title),
         leading: ElevatedButton(
           onPressed: info,
@@ -138,11 +139,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 });
               },
             ),
-            Image.asset(
-              "assets/images/allAgents.gif",
-              height: 125.0,
-              width: 125.0,
-            ),
+            // Image.asset(
+            //   "assets/images/allAgents.gif",
+            //   height: 125.0,
+            //   width: 125.0,
+            // ),
             ElevatedButton(
               onPressed: surveyResults,
               child: Text("Submit"),
